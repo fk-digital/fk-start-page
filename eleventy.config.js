@@ -104,7 +104,6 @@ export default async function(eleventyConfig) {
 	// Envs
 	eleventyConfig.addGlobalData("env", process.env);
 
-
 };
 
 export const config = {

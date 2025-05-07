@@ -35,6 +35,10 @@ jobs:
 
       - run: npm install
       - run: npm run build-ghpages
+        env:
+          DESK_LODGE_CALENDAR: ${{ secrets.DESK_LODGE_CALENDAR }}
+          WEBSITE_CONTENT: ${{ secrets.WEBSITE_CONTENT }}
+          SOCIAL_PLAN: ${{ secrets.SOCIAL_PLAN }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
